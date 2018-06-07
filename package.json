@@ -1,0 +1,29 @@
+{
+  "name": "fnt-tge",
+  "version": "1.0.0",
+  "description": "Smart Contracts for the Friend token (FNT) token generation event",
+  "scripts": {
+    "test": "scripts/test.sh",
+    "lint": "eslint test"
+  },
+  "author": "Augusto Lemble <me@augustolemble.com>",
+  "devDependencies": {
+    "ethereumjs-testrpc": "^6.0.3",
+    "truffle": "^4.0.0",
+    "truffle-hdwallet-provider": "0.0.3"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "abi-decoder": "^1.0.9",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "zeppelin-solidity": "1.5.0"
+  }
+}
