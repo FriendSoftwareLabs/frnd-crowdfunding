@@ -27,7 +27,7 @@ The FNTCrowdsale do the token distribution for the FNToken, it will issue and di
 ## Install
 
 ```
-git clone https://github.com/FriendSoftwareLabs/tge-contracts
+git clone https://github.com/FriendSoftwareLabs/frnd-crowdfunding
 npm install
 ```
 
