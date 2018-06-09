@@ -14,7 +14,7 @@ contract FNTRefundableCrowdsale is RefundableCrowdsale {
   bool public vaultClosed = false;
 
   // close vault call
-  function closeVault() onlyOwner {
+  function closeVault() public onlyOwner {
     require(!vaultClosed);
     require(goalReached());
     vault.close();
