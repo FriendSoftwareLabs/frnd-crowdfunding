@@ -216,7 +216,7 @@ contract FNTCrowdsale is FNTRefundableCrowdsale {
    */
   function addPresaleTokens(
     address[] addrs, uint256[] values, uint256 rate
-  ) public onlyOwner {
+  ) onlyOwner external {
     require(now < endTime);
     require(addrs.length == values.length);
     require(rate > 0);
@@ -240,7 +240,7 @@ contract FNTCrowdsale is FNTRefundableCrowdsale {
    * @dev add an address to the whitelist
    * @param addrs address[] addresses to be added in whitelist
    */
-  function addToWhitelist(address[] addrs) onlyOwner public {
+  function addToWhitelist(address[] addrs) onlyOwner external {
     for(uint256 i = 0; i < addrs.length; i ++) {
       require(!whitelist[addrs[i]]);
       whitelist[addrs[i]] = true;
