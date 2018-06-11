@@ -39,7 +39,6 @@ module.exports = function(deployer, network) {
         }
         else if( network == "ropsten" )
         {
-
                 //much smaller numbers for our ropsten testing!!!
 		        minFunding = new BigNumber(web3.toWei(5, 'ether'));
 		        mediumFunding = new BigNumber(web3.toWei(12, 'ether'));
@@ -51,6 +50,12 @@ module.exports = function(deployer, network) {
                 
                 wallet = "0x4f2f63065c34199a2dcadce91ec8e3a14bd6993a"; // ropsten company multisig
                 FSNASAddress = "0x4f2f63065c34199a2dcadce91ec8e3a14bd6993a"; // ropsten company multisig           
+        }
+        else if( network == "mainnet" )
+        {
+	        wallet = '0xd8d3b694907a0ea26db1bc91ad4f36b3a89cb1cb'; /* gnosis multisig */
+	        teamAddress = '0xece1f3ebeb98e3f2a8c81cc1e5c74715de00b6e6'; /* gnosis multisig - replaced by allocation contract that uses this for those without wallet */
+	        FSNASAddress = '0x1991803a9797beb4325b74a537056e21326a4485'; /* gnosis multisig */
         }
         else
         {
