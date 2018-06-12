@@ -233,7 +233,7 @@ contract FNTCrowdsale is FNTRefundableCrowdsale {
     }
 
     // Check not to issue more than maxICOSupply
-    require(token.totalSupply().add(totalTokens) <= maxICOSupply);
+    require(token.totalSupply() <= maxICOSupply);
   }
 
   /**
