@@ -9,7 +9,7 @@
   "author": "Augusto Lemble <me@augustolemble.com>",
   "devDependencies": {
     "ethereumjs-testrpc": "^6.0.3",
-    "truffle": "^4.0.0",
+    "truffle": "^4.0.5",
     "truffle-hdwallet-provider": "0.0.3"
   },
   "license": "ISC",

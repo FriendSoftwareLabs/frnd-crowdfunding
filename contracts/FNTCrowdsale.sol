@@ -267,12 +267,24 @@ contract FNTCrowdsale is FNTRefundableCrowdsale {
    */
   function finalize() onlyOwner public {
     require(!isFinalized);
-    require(goalReached());
-
-    finalization();
-    Finalized();
-
-    isFinalized = true;
+    
+    if( goalReached() )
+    {
+	    finalization();
+	    Finalized();
+	
+	    isFinalized = true;
+    }
+	else
+	{
+		if( hasEnded() )
+		{
+		    vault.enableRefunds();
+		    
+		    Finalized();
+		    isFinalized = true;
+		}
+	}    
   }
 
   /**

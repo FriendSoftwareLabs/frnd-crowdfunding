@@ -39,14 +39,15 @@ module.exports = function(deployer, network) {
         }
         else if( network == "ropsten" )
         {
+                //lets test refunding...
                 //much smaller numbers for our ropsten testing!!!
-		        minFunding = new BigNumber(web3.toWei(5, 'ether'));
-		        mediumFunding = new BigNumber(web3.toWei(12, 'ether'));
-		        highFunding = new BigNumber(web3.toWei(15, 'ether'));
-		        maxTotalSupply = new BigNumber(web3.toWei(500000)); 
+		        //minFunding = new BigNumber(web3.toWei(5, 'ether'));
+		        //mediumFunding = new BigNumber(web3.toWei(12, 'ether'));
+		        //highFunding = new BigNumber(web3.toWei(15, 'ether'));
+		        //maxTotalSupply = new BigNumber(web3.toWei(600000)); 
                 
-                startTime = Math.floor(Date.now() / 1000) + 600; // in 10mins
-                endTime = Math.floor(Date.now() / 1000) + ( 3600 * 24 ); // in one day
+                startTime = Math.floor(Date.now() / 1000) + 300; // in 5mins
+                endTime = Math.floor(Date.now() / 1000) + ( 900 ); // in 15h
                 
                 wallet = "0x4f2f63065c34199a2dcadce91ec8e3a14bd6993a"; // ropsten company multisig
                 FSNASAddress = "0x4f2f63065c34199a2dcadce91ec8e3a14bd6993a"; // ropsten company multisig           
