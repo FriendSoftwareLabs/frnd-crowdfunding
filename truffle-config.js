@@ -21,7 +21,8 @@ module.exports = {
       host: '192.168.2.143',
       port: 8545,
       network_id: '*',
-      from: "0x4085bd2D0D0E9c4d3eB8739C1C7FaED9fe06dE26"
+      from: "0x4085bd2D0D0E9c4d3eB8739C1C7FaED9fe06dE26",
+      gasPrice: 10000000000
     },  
   },
   solc: {
